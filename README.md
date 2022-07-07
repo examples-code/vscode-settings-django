@@ -11,7 +11,11 @@
 
 > pip install -r ./requirements.txt
 
-### 3. Запустить сервер разработки:
+### 3. Создание проекта, точка - в текущей директории
+> django-admin startproject project . 
+
+
+### 4. Запустить сервер разработки:
 
 > python manage.py migrate
 > python manage.py runserver
