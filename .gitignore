@@ -1,7 +1,17 @@
+# Editor directories and files
+#.vscode/* - раскомментировать!!
+!.vscode/extensions.json
+.DS_Store
+.idea
+idea
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*/__pycache__/
 *.py[cod]
 *$py.class
+.pyc
+*.pyc
 
 # C extensions
 *.so
@@ -104,11 +114,16 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.env.dev
+.env.prod
+.env.test
+.env.stage
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+django_env
 django_env/
 
 # Spyder project settings
@@ -128,3 +143,18 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Django
+media/*
+static/*
+!*media/.gitkeep
+!media/static
+
+# Other
+*.backup
+.backup
+db_dump.json
+db_dump*.json
+*.local
+
+
